@@ -50,6 +50,60 @@ main{
     color: #2F447A
 }
 
+section{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+.firsttitle{
+    grid-column-start: 3;
+}
+
+.firstimg{
+    grid-column-start: 3;
+}
+
+.secondimg{
+    grid-column-start: 6;
+}
+
+.seconddescription{
+    grid-column-start: 7;
+}
+
+.thirdimg{
+    grid-column-start: 3;
+}
+
+.secondtitle{
+    grid-column-start: 1;
+}
+
+.fourthimg{
+    grid-column-start: 6;
+    
+}
+
+.thirdtitle{
+    grid-column-start: 1;
+}
+
+.fifthimg{
+    grid-column-start: 3;
+}
+
+.sixthimg{
+    grid-column-start: 6;
+}
+
+img{
+    width: 
+    height: 650rem;
+}
+
 h1{
     font-family: Doppio One;
     font-size: 2rem;
