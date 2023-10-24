@@ -7,7 +7,14 @@ html{
 body{
     background-color: #FDE4B5;
     font-family: 'Oxanium', sans-serif;
+    max-width: 88rem;
+    margin: auto; 
     
+}
+
+img{
+    max-width: 100%;
+    max-height: 650px;
 }
 
 a{
@@ -28,23 +35,31 @@ a:hover{
 }
 
 header{
+    width: 75%; 
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo{
-    margin: 3rem 
+header img{
+    margin: 3rem; 
+    width: 300%; 
     
 }
 
 nav{
     font-family: 'Doppio One', sans-serif;
-    color: #2F447A
+    color: #2F447A; 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+nav a{
+    margin: 0 0 0 2rem; 
+}
+
 
 main{
     color: #2F447A
@@ -58,51 +73,59 @@ section{
     grid-auto-flow: dense;
 }
 
+#tagline {
+    text-align: center;
+    grid-column: 1/12;
+}
 .firsttitle{
-    grid-column-start: 3;
+    grid-column: 1/6; 
 }
 
 .firstimg{
-    grid-column-start: 3;
+    grid-column: 6/12; 
 }
 
 .secondimg{
-    grid-column-start: 6;
+    grid-column: 1/6; 
 }
 
 .seconddescription{
-    grid-column-start: 7;
+    grid-column: 7/11; 
+    align-self: start;
+
 }
 
 .thirdimg{
-    grid-column-start: 3;
+    grid-column: 6/12;
 }
 
 .secondtitle{
-    grid-column-start: 1;
+    grid-column: 1/12;
 }
 
 .fourthimg{
-    grid-column-start: 6;
+    grid-column: 3/12;
+    margin: auto;
     
 }
 
 .thirdtitle{
-    grid-column-start: 1;
+    grid-column: 1/12;
 }
 
 .fifthimg{
-    grid-column-start: 3;
+    grid-column: 1/6;
 }
 
 .sixthimg{
-    grid-column-start: 6;
+    grid-column: 6/12;
 }
 
-img{
-    width: 
-    height: 650rem;
+#bio{
+    grid-column: 3/6;
 }
+
+
 
 h1{
     font-family: Doppio One;
@@ -121,7 +144,9 @@ h2{
 }
 
 footer{
-    color: #2F447A
+    width: 75%; 
+    margin: auto; 
+    color: #2F447A; 
     font-family: 'Doppio One', sans-serif;
     display: flex;
     align-items: center;
