@@ -22,6 +22,11 @@ a:hover{
     color: #F2A1A1
 }
 
+.splashlogo{
+    max-width: 20rem;
+    margin: 18rem auto;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -29,7 +34,8 @@ header{
 }
 
 .logo{
-    margin: 3rem
+    margin: 3rem 
+    
 }
 
 nav{
@@ -49,7 +55,7 @@ h1{
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+ 
 }
 
 h2{
@@ -57,7 +63,7 @@ h2{
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+
 }
 
 footer{
