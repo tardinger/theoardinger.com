@@ -5,7 +5,11 @@ html{
 }
 
 body{
-    background-color: #FDE4B5;
+    background-image: url(../img/Splashpagebckgrnd.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Oxanium', sans-serif;
     max-width: 88rem;
     margin: auto; 
@@ -30,8 +34,7 @@ a:hover{
 }
 
 .splashlogo{
-    max-width: 20rem;
-    margin: 18rem auto;
+   
 }
 
 header{
@@ -123,6 +126,45 @@ section{
 
 #bio{
     grid-column: 3/6;
+}
+
+.abone{
+    grid-column: 1/8;
+}
+
+.abtwo{
+    grid-column: 6/13;
+}
+
+.abthree{
+    grid-column: 1/8 
+}
+   
+.abfour{
+    grid-column: 6/13;
+}
+.abfive{
+    grid-column: 1/8;
+}
+
+.absix{
+    grid-column: 6/13;
+}
+
+.abseven{
+    grid-column: 1/8;
+}
+
+.abeight{
+    grid-column: 6/13;
+}
+
+.abnine{
+    grid-column: 1/8;
+}
+
+.abten{
+    grid-column: 6/13;
 }
 
 
