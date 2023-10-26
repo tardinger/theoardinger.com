@@ -5,16 +5,17 @@ html{
 }
 
 body{
-    background-image: url(../img/bagtexturebckrnd.jpg);
-    background-image: ;
-    background-repeat: no-repeat;
+    background: url(../img/bagtexturebckrnd.jpg) no-repeat center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     font-family: 'Space Grotesk', sans-serif;
     max-width: 88rem;
     margin: auto; 
     
+}
+
+.secondbackground{
+    background: url(../img/nonsplashbackgrnd.jpg) no-repeat center fixed;
+    background-size: cover;
 }
 
 img{
@@ -23,11 +24,12 @@ img{
 }
 
 a{
-     text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover{
-    color: #F2A1A1
+a:visited{
+    text-decoration: none;
+    color: #020f2f;
 }
 
 .selected{
@@ -56,7 +58,7 @@ header img{
 
 nav{
     font-family: 'Tourney', sans-serif;
-    color: #072060;
+    color: #03184d;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,14 +66,16 @@ nav{
 
 nav a{
     margin: 0 0 0 2rem; 
+    color: #020f2f;
 }
 
-a:visited{
-    color: inherit;
+a:hover{
+    transform: scale(1.2);
+    
 }
 
 main{
-    color: #072060
+    color: #020f2f
 }
 
 section{
@@ -128,8 +132,8 @@ section{
     grid-column: 6/12;
 }
 
-#bio{
-    grid-column: 3/6;
+.bio{
+    grid-column: 6/12
 }
 
 .abone{
@@ -171,6 +175,10 @@ section{
     grid-column: 6/13;
 }
 
+.contactgrid{
+    grid-column: 1/8;
+}
+
 h1{
     font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
@@ -192,7 +200,6 @@ h3{
 footer{
     width: 75%; 
     margin: auto; 
-    color: #2F447A; 
     font-family: 'Doppio One', sans-serif;
     display: flex;
     align-items: center;
