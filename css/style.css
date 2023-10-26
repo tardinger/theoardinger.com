@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Doppio+One&family=Oxanium&family=Red+Rose&family=Tourney&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Doppio+One&family=Oxanium&family=Red+Rose&family=Space+Grotesk&family=Tourney&display=swap');
 
 html{
     font-size: 16px;
 }
 
 body{
-    background-image: url(../img/Splashpagebckgrnd.webp);
+    background-image: url(../img/bagtexturebckrnd.jpg);
+    background-image: ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Oxanium', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     max-width: 88rem;
     margin: auto; 
     
@@ -34,7 +35,10 @@ a:hover{
 }
 
 .splashlogo{
-   
+   margin: auto;
+   margin-top: 35%;
+   margin-left: 55%;
+   width: 500px;
 }
 
 header{
@@ -48,12 +52,11 @@ header{
 header img{
     margin: 3rem; 
     width: 300%; 
-    
 }
 
 nav{
-    font-family: 'Doppio One', sans-serif;
-    color: #2F447A; 
+    font-family: 'Tourney', sans-serif;
+    color: #072060;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,9 +66,12 @@ nav a{
     margin: 0 0 0 2rem; 
 }
 
+a:visited{
+    color: inherit;
+}
 
 main{
-    color: #2F447A
+    color: #072060
 }
 
 section{
@@ -95,7 +101,6 @@ section{
 .seconddescription{
     grid-column: 7/11; 
     align-self: start;
-
 }
 
 .thirdimg{
@@ -108,8 +113,7 @@ section{
 
 .fourthimg{
     grid-column: 3/12;
-    margin: auto;
-    
+    margin: auto; 
 }
 
 .thirdtitle{
@@ -167,22 +171,22 @@ section{
     grid-column: 6/13;
 }
 
-
-
 h1{
-    font-family: Doppio One;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
- 
 }
 
 h2{
-    font-family: Oxanium;
-    font-size: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
+}
 
+h3{
+    font-size: 1.5rem;
 }
 
 footer{
