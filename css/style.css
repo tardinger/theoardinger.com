@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Doppio+One&family=Oxanium&family=Red+Rose&family=Space+Grotesk&family=Tourney&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Oxanium&family=Space+Grotesk&family=Tourney&family=Urbanist&display=swap');
 
 html{
     font-size: 16px;
@@ -94,6 +94,10 @@ section{
     grid-column: 1/6; 
 }
 
+.ablink{
+    color: #ffffff;
+}
+
 .firstimg{
     grid-column: 6/12; 
 }
@@ -111,6 +115,10 @@ section{
     grid-column: 6/12;
 }
 
+.thirddescription{
+    grid-column: 1/6;
+}
+
 .secondtitle{
     grid-column: 1/12;
 }
@@ -118,6 +126,10 @@ section{
 .fourthimg{
     grid-column: 3/12;
     margin: auto; 
+}
+
+.fourthdescription{
+    grid-column: 3/12;
 }
 
 .thirdtitle{
@@ -128,8 +140,16 @@ section{
     grid-column: 1/6;
 }
 
-.sixthimg{
+.fifthdescription{
     grid-column: 6/12;
+}
+
+.sixthimg{
+    grid-column: 7/13;
+}
+
+.sixthdescription{
+    grid-column: 1/6;
 }
 
 .bio{
@@ -181,20 +201,22 @@ section{
 
 h1{
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
 }
 
 h2{
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
+    color: #000000;
 }
 
 h3{
     font-size: 1.5rem;
+    font-family: 'Urbanist', sans-serif;
 }
 
 footer{
@@ -204,4 +226,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #020f2f;
+}
+
+a footer{
+    color: #020f2f;
 }
