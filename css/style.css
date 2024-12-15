@@ -216,13 +216,18 @@ section{
     position: relative; /* Removes absolute positioning */
 }
 
-.bio{
-    grid-column: 9/12
+.bio {
+    position: absolute;   /* Enables absolute positioning */
+    top: 3rem;            /* Distance from the top */
+    right: 3rem;          /* Distance from the right */
+    max-width: 350px;     /* Limit the width of the content */
     font-family: "Syncopate", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
+    text-align: left;     /* Ensures the text is aligned properly */
 }
+
 
 h1{
     font-family: "Syncopate", sans-serif;
