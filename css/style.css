@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Syncopate:wght@400;700&display=swap');
 
 html{
     font-weight: 700;
@@ -16,11 +16,11 @@ body{
 .secondbackground{
     /*background: url(../img/background.jpg) no-repeat center fixed;
     background-size: cover;*/
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
 img{
-    max-width: 350px;
+    max-width: 400px;
 }
 
 a{
@@ -43,17 +43,13 @@ a:visited{
    width: 500px;
 }
 
-header{
+header {
     width: 75%; 
     margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img{
-    margin: 3rem; 
-    width: 300%; 
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center align content horizontally */
+    text-align: center;     /* Center text inside the header */
 }
 
 nav {
@@ -207,8 +203,9 @@ section{
 }
 
 .aboutimg {
-    max-width: 350px;
-    margin: auto;
+    max-width: 500px;
+    top: 15rem;
+    left: 15rem; 
     display: flex;
     justify-content: center; /* Horizontal centering */
     align-items: center; /* Vertical centering */
@@ -218,16 +215,40 @@ section{
 
 .bio {
     position: absolute;   /* Enables absolute positioning */
-    top: 3rem;            /* Distance from the top */
-    right: 3rem;          /* Distance from the right */
-    max-width: 350px;     /* Limit the width of the content */
-    font-family: "Syncopate", sans-serif;
-    font-size: 1rem;
+    top: 18rem;            /* Distance from the top */
+    right: 17rem;          /* Distance from the right */
+    max-width: 500px;     /* Limit the width of the content */
+    font-family: "Eczar", serif;
+    font-size: 1.1rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;     /* Ensures the text is aligned properly */
 }
 
+footer {
+    text-align: center; /* Center the content inside the footer */
+    margin-top: 20rem; /* Add spacing above the footer */
+    padding: 3rem; /* Add some padding inside the footer */
+    background-color: none; /* Optional: Footer background color */
+}
+
+.resume-button {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    background-color: #f77cbd; /* Button background color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s;
+    margin: auto;
+}
+
+.resume-button:hover {
+    transform: scale(1.1); /* Darker blue on hover */
+}
 
 h1{
     font-family: "Syncopate", sans-serif;
@@ -249,18 +270,5 @@ h3{
     font-family: "Syncopate", sans-serif;
 }
 
-footer{
-    width: 75%; 
-    margin: auto; 
-    font-family: "Syncopate", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #3b2813;
-}
-
-footer a{
-    color: #3b2813;
-}
 
 /*url(../img/bagtexturebckrnd.jpg)*/
