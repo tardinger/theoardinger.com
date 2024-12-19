@@ -13,7 +13,6 @@
     font-style: normal; 
 }
 
-
 html{
     font-weight: 700;
 }
@@ -24,12 +23,9 @@ body{
     font-family: "Syncopate", sans-serif;
     max-width: 88rem;
     margin: auto; 
-    
 }
 
 .secondbackground{
-    /*background: url(../img/background.jpg) no-repeat center fixed;
-    background-size: cover;*/
     background-color:  #f9f5f0;
 }
 
@@ -39,22 +35,6 @@ img{
 
 a{
     text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-    color: #3b2813;
-}
-
-.selected{
-    color: #F2A1A1
-}
-
-.splashlogo{
-   margin: auto;
-   margin-top: 35%;
-   margin-left: 55%;
-   width: 500px;
 }
 
 header {
@@ -244,6 +224,20 @@ footer {
     margin-top: 20rem; /* Add spacing above the footer */
     padding: 3rem; /* Add some padding inside the footer */
     background-color: none; /* Optional: Footer background color */
+}
+
+.contactfoot {
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-size: 2rem;
+    color: #3b2813;
+    display: flex;
+    justify-content: space-between; /* Spread the three items evenly */
+    align-items: center; /* Vertically center items */
+    position: fixed; /* Fix footer to bottom */
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%; /* Full width of the page */
+    padding: 10px 20px; /* Padding for spacing */                        
 }
 
 .resume-button {
