@@ -20,9 +20,10 @@ html{
 body{
     background: url(../img/bagtexturebckrnd.jpg) no-repeat center fixed;
     background-size: cover;
-    font-family: "Syncopate", sans-serif;
-    max-width: 88rem;
-    margin: auto; 
+    height: 100%; /* Make sure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
 }
 
 .secondbackground{
@@ -75,12 +76,110 @@ nav a:hover {
 }
 
 main{
+    display: flex;
     color: #3b2813;
     font-size: 1.3rem;
     font-weight: 700;
+    flex: 1; /* Make the main content expand to fill the space between header and footer */
 }
 
-section{
+.aboutimg {
+    max-width: 500px;
+    top: 15rem;
+    left: 15rem; 
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Optional: Makes the container span full height */
+    position: relative; /* Removes absolute positioning */
+}
+
+.bio {
+    position: absolute;   /* Enables absolute positioning */
+    top: 18rem;            /* Distance from the top */
+    right: 17rem;          /* Distance from the right */
+    max-width: 500px;     /* Limit the width of the content */
+    font-family: "newbery-sans-pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;     /* Ensures the text is aligned properly */
+}
+
+footer {
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-size: 2rem;
+    color: #3b2813;
+    display: flex;                /* Use flexbox layout */
+    flex-direction: row;          /* Arrange items horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 3rem; /* Optional: Add padding */
+    background-color: none; /* Adjust if needed */
+    text-align: center; /* Center the content */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-end;        /* Align items at the bottom */
+    position: relative;  
+}
+
+footer a:hover{
+    transform: scale(1.1); /* Adjust hover scaling */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.contactfoot {
+    
+    
+    padding: 1rem 2rem;           /* Add padding for spacing */
+    margin: 0;                    /* Remove any default margin */
+             /* Relative positioning (optional) */                      
+}
+
+.resume-button {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    background-color: #3D46F2; /* Button background color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s;
+    margin: auto;
+}
+
+.resume-button:hover {
+    transform: scale(1.1); /* Darker blue on hover */
+}
+
+h1{
+    font-family: "newbery-sans-pro", sans-serif;
+    font-variation-settings: "wght" 800;
+    font-size: 5.5rem;
+    font-style: normal;
+    margin: auto;
+    color: #3D46F2;
+}
+
+h2{
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    font-size: 2.3rem;
+    font-style: normal;
+    max-width: 50rem;
+    color: #1D272D;
+}
+
+h3{
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    font-size: 2.0rem;
+    font-style: normal;
+    color: #F48C40;
+}
+
+/* section{
     margin: 5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -196,91 +295,4 @@ section{
 .contactgrid{
     grid-column: 1/8;
 }
-
-.aboutimg {
-    max-width: 500px;
-    top: 15rem;
-    left: 15rem; 
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100%; /* Optional: Makes the container span full height */
-    position: relative; /* Removes absolute positioning */
-}
-
-.bio {
-    position: absolute;   /* Enables absolute positioning */
-    top: 18rem;            /* Distance from the top */
-    right: 17rem;          /* Distance from the right */
-    max-width: 500px;     /* Limit the width of the content */
-    font-family: "newbery-sans-pro", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    text-align: left;     /* Ensures the text is aligned properly */
-}
-
-footer {
-    text-align: center; /* Center the content inside the footer */
-    margin-top: 20rem; /* Add spacing above the footer */
-    padding: 3rem; /* Add some padding inside the footer */
-    background-color: none; /* Optional: Footer background color */
-}
-
-.contactfoot {
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 100;
-    font-size: 2rem;
-    color: #3b2813;
-    display: flex;
-    justify-content: space-between; /* Spread the three items evenly */
-    align-items: center; /* Vertically center items */
-    position: fixed; /* Fix footer to bottom */
-    bottom: 0; /* Align to the bottom of the viewport */
-    width: 100%; /* Full width of the page */
-    padding: 10px 20px; /* Padding for spacing */                        
-}
-
-.resume-button {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 700;
-    background-color: #3D46F2; /* Button background color */
-    color: rgb(255, 255, 255); /* Button text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Add padding for size */
-    font-size: 1rem; /* Adjust font size */
-    border-radius: 20px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.3s;
-    margin: auto;
-}
-
-.resume-button:hover {
-    transform: scale(1.1); /* Darker blue on hover */
-}
-
-h1{
-    font-family: "newbery-sans-pro", sans-serif;
-    font-variation-settings: "wght" 800;
-    font-size: 5.5rem;
-    font-style: normal;
-    margin: auto;
-    color: #3D46F2;
-}
-
-h2{
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 200;
-    font-size: 2.3rem;
-    font-style: normal;
-    max-width: 50rem;
-    color: #1D272D;
-}
-
-h3{
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 200;
-    font-size: 2.0rem;
-    font-style: normal;
-    color: #F48C40;
-}
-
+    */
