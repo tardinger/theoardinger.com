@@ -106,44 +106,19 @@ main{
 }
 
 footer {
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 100;
-    font-size: 2rem;
-    color: #f9f5f0;
-    text-decoration: none;
-    display: flex;                /* Use flexbox layout */
-    flex-direction: row;          /* Arrange items horizontally */
     margin: 0; /* Remove default margin */
-    padding: 3rem; /* Optional: Add padding */
     background-color: #3D46F2; /* Adjust if needed */
-    text-align: center; /* Center the content */
-    flex-shrink: 0; /* Prevent the footer from shrinking */
-    justify-content: space-between; /* Space items evenly */
-    align-items: flex-end;        /* Align items at the bottom */
-    position: relative;  
-}
-
-footer a:hover{
-    transform: scale(1.1); /* Adjust hover scaling */
-    transition: transform 0.3s; /* Smooth scaling effect on hover */
-}
-
-footer a:visited{
-    color: #f9f5f0;
-}
-
-footer a:active{
-    color: #f9f5f0;
+    align-items: flex-end;        /* Align items at the bottom */ 
 }
 
 .linkedin-button {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 700;
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-size: 1rem;
+    color: #f9f5f0;
     background-color: #3D46F2; /* Button background color */
-    color: rgb(255, 255, 255); /* Button text color */
     border: none; /* Remove border */
     padding: 10px 20px; /* Add padding for size */
-    font-size: 1rem; /* Adjust font size */
     border-radius: 20px; /* Add rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: transform 0.3s;
