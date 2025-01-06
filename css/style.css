@@ -136,6 +136,42 @@ footer a:active{
     color: #f9f5f0;
 }
 
+.linkedin-button {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    background-color: #3D46F2; /* Button background color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s;
+    margin: auto;
+}
+
+.linkedin-button:hover {
+    transform: scale(1.1); /* Darker blue on hover */
+}
+
+.email-button {
+    font-family: "Syncopate", sans-serif;
+    font-weight: 700;
+    background-color: #3D46F2; /* Button background color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s;
+    margin: auto;
+}
+
+.email-button:hover {
+    transform: scale(1.1); /* Darker blue on hover */
+}
+
 .resume-button {
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
