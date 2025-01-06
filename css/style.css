@@ -132,6 +132,9 @@ footer a:visited{
     color: #f9f5f0;
 }
 
+footer a:active{
+    color: #f9f5f0;
+}
 
 .resume-button {
     font-family: "Syncopate", sans-serif;
