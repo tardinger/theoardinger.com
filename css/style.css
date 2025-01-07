@@ -61,6 +61,21 @@ nav {
     left: 1rem; /* Distance from the left */
 }
 
+.contactnav{
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-size: 2rem;
+    color: #3b2813;
+    display: flex;
+    flex-direction: row; /* Arrange links horizontally */
+    align-items: flex-end; /* Align items to the end */
+    padding: 1rem 2rem; /* Inner space around the nav */
+    margin: 0; /* Remove any default margin */
+    position: absolute; /* Position independently */
+    top: 2rem; /* Distance from the top */
+    right: 1rem; /* Distance from the right */
+}
+
 nav a {
     margin-bottom: 1rem; /* Add space between links */
     color: #3b2813;
