@@ -18,8 +18,7 @@ html{
 }
 
 body{
-    background: url(../img/bagtexturebckrnd.jpg) no-repeat center fixed;
-    background-size: cover;
+    
     height: 100%; /* Make sure the body takes up the full height of the viewport */
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox for layout */
@@ -31,7 +30,7 @@ body{
 }
 
 img{
-    max-width: 400px;
+    max-width: 350px;
 }
 
 a{
@@ -83,21 +82,28 @@ main{
     flex: 1; /* Make the main content expand to fill the space between header and footer */
 }
 
+p{
+    font-size: 1.2rem;
+}
+
 .aboutimg {
-    max-width: 500px;
-    top: 15rem;
-    left: 15rem; 
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100%; /* Optional: Makes the container span full height */
-    position: relative; /* Removes absolute positioning */
+    justify-content: flex-start; /* Aligns items to the start (left) horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Ensures the container takes full viewport height */
+    padding-left: 10rem; /* Adds some padding from the left edge */
+}
+
+.aboutimg img {
+    width: 80%; /* Adjusts image width to be responsive */
+    max-width: 500px; /* Ensures the image doesn't exceed a certain size */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .bio {
     position: absolute;   /* Enables absolute positioning */
-    top: 18rem;            /* Distance from the top */
-    right: 17rem;          /* Distance from the right */
+    top: 14rem;            /* Distance from the top */
+    right: 15rem;          /* Distance from the right */
     max-width: 500px;     /* Limit the width of the content */
     font-family: "newbery-sans-pro", sans-serif;
     font-weight: 200;
@@ -106,21 +112,7 @@ main{
 }
 
 footer {
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 100;
-    font-size: 2rem;
-    color: #f9f5f0;
-    text-decoration: none;
-    display: flex;                /* Use flexbox layout */
-    flex-direction: row;          /* Arrange items horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 3rem; /* Optional: Add padding */
-    background-color: #3D46F2; /* Adjust if needed */
-    text-align: center; /* Center the content */
-    flex-shrink: 0; /* Prevent the footer from shrinking */
-    justify-content: space-between; /* Space items evenly */
-    align-items: flex-end;        /* Align items at the bottom */
-    position: relative;  
+     
 }
 
 footer a:hover{
@@ -128,25 +120,25 @@ footer a:hover{
     transition: transform 0.3s; /* Smooth scaling effect on hover */
 }
 
-footer a:
-
-
 .resume-button {
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
-    background-color: #3D46F2; /* Button background color */
-    color: rgb(255, 255, 255); /* Button text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Add padding for size */
-    font-size: 1rem; /* Adjust font size */
-    border-radius: 20px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: #3D46F2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
     transition: transform 0.3s;
-    margin: auto;
+    position: absolute;
+    bottom: 40px; /* Distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .resume-button:hover {
-    transform: scale(1.1); /* Darker blue on hover */
+    transform: translateX(-50%) scale(1.1);
 }
 
 h1{
