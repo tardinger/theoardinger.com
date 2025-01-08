@@ -18,7 +18,6 @@ html{
 }
 
 body{
-    
     height: 100%; /* Make sure the body takes up the full height of the viewport */
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox for layout */
@@ -30,7 +29,7 @@ body{
 }
 
 img{
-    max-width: 350px;
+   
 }
 
 a{
@@ -38,55 +37,29 @@ a{
 }
 
 header {
-    width: 75%; 
-    margin: auto;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center;    /* Center align content horizontally */
-    text-align: center;     /* Center text inside the header */
+    width: 100%; /* Full width for the header */
+    background-color: #f9f5f0; /* Optional background */
+    padding: 1rem 2rem; /* Padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 nav {
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 100;
-    font-size: 2rem;
-    color: #3b2813;
-    display: flex;
-    flex-direction: row; /* Stack links vertically */
-    align-items: flex-start; /* Align links to the left */
-    padding: 1rem 2rem; /* Inner space around the nav */
-    margin: 0; /* Remove any default margin */
-    position: absolute; /* Ensure nav is positioned independently */
-    top: 1rem; /* Distance from the top */
-    left: 1rem; /* Distance from the left */
-}
-
-.contactnav{
-    font-family: "ouma-latin-variable", sans-serif;
-    font-variation-settings: "wght" 100;
-    font-size: 2rem;
-    color: #3b2813;
-    display: flex;
-    flex-direction: row; /* Arrange links horizontally */
-    align-items: flex-end; /* Align items to the end */
-    padding: 1rem 2rem; /* Inner space around the nav */
-    margin: 0; /* Remove any default margin */
-    position: absolute; /* Position independently */
-    top: 2rem; /* Distance from the top */
-    right: 1rem; /* Distance from the right */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Push links to opposite corners */
+    align-items: center; /* Center links vertically */
 }
 
 nav a {
-    margin-bottom: 1rem; /* Add space between links */
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+    font-size: 2rem;
     color: #3b2813;
-    padding: 0.5rem; /* Add padding for clickable area */
-    text-align: left; /* Ensure text aligns to the left */
-    display: block; /* Make each link take up its own line */
-    transition: transform 0.3s; /* Smooth scaling effect on hover */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s; /* Smooth scaling effect */
 }
 
 nav a:hover {
-    transform: scale(1.1); /* Adjust hover scaling */
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 main{
