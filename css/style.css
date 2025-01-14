@@ -14,7 +14,7 @@
 }
 
 html{
-
+    background-color: #f9f5f0; /* Optional background */
 }
 
 body{
@@ -22,10 +22,6 @@ body{
     margin: 0; /* Remove default margin */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack children vertically */
-}
-
-.secondbackground{
-    background-color:  #f9f5f0;
 }
 
 img{
@@ -38,15 +34,18 @@ a{
 
 header {
     width: 100%; /* Full width for the header */
-    background-color: #f9f5f0; /* Optional background */
     padding: 1rem 2rem; /* Padding for spacing */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-top: 1.3rem;
+    text-align: center;
+    
 }
 
 nav {
     display: flex; /* Use Flexbox for layout */
     justify-content: space-between; /* Push links to opposite corners */
     align-items: center; /* Center links vertically */
+    padding: 1rem;
 }
 
 nav a {
@@ -78,12 +77,13 @@ p{
     display: flex;
     justify-content: flex-start; /* Aligns items to the start (left) horizontally */
     align-items: center; /* Centers items vertically */
-    height: 100vh; /* Ensures the container takes full viewport height */
-    padding-left: 10rem; /* Adds some padding from the left edge */
+    height: 76vh; /* Ensures the container takes full viewport height */
+    padding-left: 12rem; /* Adds some padding from the left edge */
+    padding-top: 0;
 }
 
 .aboutimg img {
-    width: 80%; /* Adjusts image width to be responsive */
+    width: 70%; /* Adjusts image width to be responsive */
     max-width: 500px; /* Ensures the image doesn't exceed a certain size */
     height: auto; /* Maintains aspect ratio */
 }
@@ -187,7 +187,7 @@ h1{
     font-variation-settings: "wght" 800;
     font-size: 4rem;
     font-style: normal;
-    margin: auto;
+    margin-top: 1;
     color: #3D46F2;
 }
 
@@ -196,8 +196,9 @@ h2{
     font-variation-settings: "wght" 150;
     font-size: 2rem;
     font-style: normal;
-    max-width: 50rem;
     color: #1D272D;
+    margin: auto;
+
 }
 
 h3{
@@ -206,6 +207,7 @@ h3{
     font-size: 1.8rem;
     font-style: normal;
     color: #F48C40;
+    
 }
 
 /* section{
