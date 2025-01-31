@@ -61,13 +61,26 @@ nav a:hover {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
-.helveticathumb{
-    display: flex;
-    justify-content: flex-start; /* Aligns items to the start (left) horizontally */
-    align-items: center; /* Centers items vertically */
-    height: 76vh; /* Ensures the container takes full viewport height */
-    padding-left: 12rem; /* Adds some padding from the left edge */
-    padding-top: 10;
+section {
+    max-width: 1200px; /* Sets a max width for layout control */
+    margin: 4rem; /* Centers the section */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 2rem; /* Adds spacing between columns */
+}
+
+.firstpiece {
+    grid-column: 1; /* Ensures it stays in the first column */
+    width: 100%; /* Makes it fit only within its grid column */
+    max-width: 100%; /* Ensures it doesn't exceed column width */
+    height: auto; /* Keeps aspect ratio */
+    margin: auto; /* Centers within its grid area */
+}
+
+.secondpiece {
+    grid-column: 2; /* Places this in the second column */
+    width: 100%;
+    height: auto;
 }
 
 main{
