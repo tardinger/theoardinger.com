@@ -61,6 +61,15 @@ nav a:hover {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+.helveticathumb{
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start (left) horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 76vh; /* Ensures the container takes full viewport height */
+    padding-left: 12rem; /* Adds some padding from the left edge */
+    padding-top: 10;
+}
+
 main{
     display: flex;
     color: #3b2813;
