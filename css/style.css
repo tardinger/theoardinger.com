@@ -83,6 +83,18 @@ section {
     height: auto;
 }
 
+.thirdpiece {
+    grid-column: 1; /* Places this in the second column */
+    width: 100%;
+    height: auto;
+}
+
+.fourthpiece {
+    grid-column: 2; /* Places this in the second column */
+    width: 100%;
+    height: auto;
+}
+
 main{
     display: flex;
     color: #3b2813;
