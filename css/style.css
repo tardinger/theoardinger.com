@@ -14,14 +14,15 @@
 }
 
 html{
-    background-color: #f9f5f0; /* Optional background */
+    background-color: #fafaef;
 }
 
 body{
-    height: 100%; /* Make sure the body takes up the full height of the viewport */
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack children vertically */
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    flex-shrink: 0; 
 }
 
 img{
@@ -33,18 +34,18 @@ a{
 }
 
 header {
-    width: 100%; /* Full width for the header */
-    padding: 1rem 2rem; /* Padding for spacing */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    margin-top: 1.3rem;
+    width: 100%;
+    padding: 1rem 2rem; 
+    box-sizing: border-box; 
+    margin-top: .5rem;
     text-align: center;
     
 }
 
 nav {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Push links to opposite corners */
-    align-items: center; /* Center links vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     padding: 1rem;
 }
 
@@ -53,46 +54,66 @@ nav a {
     font-variation-settings: "wght" 100;
     font-size: 2rem;
     color: #3b2813;
-    text-decoration: none; /* Remove underline */
-    transition: transform 0.3s; /* Smooth scaling effect */
+    text-decoration: none; 
+    transition: transform 0.3s; 
 }
 
 nav a:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); 
 }
 
 section {
-    max-width: 1200px; /* Sets a max width for layout control */
-    margin: 4rem; /* Centers the section */
+    max-width: 1200px; 
+    margin: 4rem; 
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
-    gap: 2rem; /* Adds spacing between columns */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4rem; 
 }
 
 .firstpiece {
-    grid-column: 1; /* Ensures it stays in the first column */
-    width: 100%; /* Makes it fit only within its grid column */
-    max-width: 100%; /* Ensures it doesn't exceed column width */
-    height: auto; /* Keeps aspect ratio */
-    margin: auto; /* Centers within its grid area */
+    grid-column: 1; 
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    margin: auto; 
+    border: 1px none;
+}
+
+.firstpiece img{
+    border-radius: 30px;
 }
 
 .secondpiece {
-    grid-column: 2; /* Places this in the second column */
+    grid-column: 2; 
     width: 100%;
     height: auto;
+    border: 1px none; 
+}
+
+.secondpiece img{
+    border-radius: 30px;
 }
 
 .thirdpiece {
-    grid-column: 1; /* Places this in the second column */
+    grid-column: 1; 
     width: 100%;
     height: auto;
+    border: 1px none; 
+}
+
+.thirdpiece img{
+    border-radius: 30px;
 }
 
 .fourthpiece {
-    grid-column: 2; /* Places this in the second column */
+    grid-column: 2; 
     width: 100%;
     height: auto;
+    border: 1px none;   
+}
+
+.fourthpiece img{
+    border-radius: 30px;
 }
 
 main{
@@ -100,7 +121,7 @@ main{
     color: #3b2813;
     font-size: 1.3rem;
     font-weight: 700;
-    flex: 1; /* Make the main content expand to fill the space between header and footer */
+    flex: 1; 
 }
 
 p{
@@ -109,28 +130,28 @@ p{
 
 .aboutimg {
     display: flex;
-    justify-content: flex-start; /* Aligns items to the start (left) horizontally */
-    align-items: center; /* Centers items vertically */
-    height: 76vh; /* Ensures the container takes full viewport height */
-    padding-left: 12rem; /* Adds some padding from the left edge */
+    justify-content: flex-start; 
+    align-items: center; 
+    height: 76vh;
+    padding-left: 12rem; 
     padding-top: 0;
 }
 
 .aboutimg img {
-    width: 70%; /* Adjusts image width to be responsive */
-    max-width: 500px; /* Ensures the image doesn't exceed a certain size */
-    height: auto; /* Maintains aspect ratio */
+    width: 70%; 
+    max-width: 500px; 
+    height: auto; 
 }
 
 .bio {
-    position: absolute;   /* Enables absolute positioning */
-    top: 14rem;            /* Distance from the top */
-    right: 15rem;          /* Distance from the right */
-    max-width: 500px;     /* Limit the width of the content */
+    position: absolute;  
+    top: 14rem;            
+    right: 15rem;         
+    max-width: 500px;     
     font-family: "newbery-sans-pro", sans-serif;
     font-weight: 200;
     font-style: normal;
-    text-align: left;     /* Ensures the text is aligned properly */
+    text-align: left; 
 }
 
 
@@ -187,19 +208,28 @@ p{
   }
   
 footer {
-     
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem;
+    position: relative;
+    text-align: center; 
+    background-color: #3D46F2; 
+    margin-top: auto; 
+    max-width: 100%; 
+    overflow: hidden; 
 }
 
 footer a:hover{
-    transform: scale(1.1); /* Adjust hover scaling */
-    transition: transform 0.3s; /* Smooth scaling effect on hover */
+    transform: scale(1.1); 
+    transition: transform 0.3s; 
 }
 
 .resume-button {
     font-family: "Syncopate", sans-serif;
     font-weight: 700;
     background-color: #3D46F2;
-    color: #ffffff;
+    color: #fafaef;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -207,7 +237,7 @@ footer a:hover{
     cursor: pointer;
     transition: transform 0.3s;
     position: absolute;
-    bottom: 40px; /* Distance from the bottom */
+    bottom: 40px; 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -244,120 +274,11 @@ h3{
     
 }
 
-/* section{
-    margin: 5rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 1.5rem;
-    grid-auto-flow: dense;
+h4{
+    font-family: "ouma-latin-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    font-size: 1.3rem;
+    font-style: normal;
+    color: #fafaef;
+    
 }
-
-#tagline {
-    text-align: center;
-    grid-column: 1/12;
-}
-.firsttitle{
-    grid-column: 1/6; 
-}
-
-.ablink{
-    color: #ffffff;
-}
-
-.firstimg{
-    grid-column: 6/12; 
-}
-
-.secondimg{
-    grid-column: 1/6; 
-}
-
-.seconddescription{
-    grid-column: 7/11; 
-    align-self: start;
-}
-
-.thirdimg{
-    grid-column: 6/12;
-}
-
-.thirddescription{
-    grid-column: 1/6;
-}
-
-.secondtitle{
-    grid-column: 1/12;
-}
-
-.fourthimg{
-    grid-column: 3/12;
-    margin: auto; 
-}
-
-.fourthdescription{
-    grid-column: 3/12;
-}
-
-.thirdtitle{
-    grid-column: 1/12;
-}
-
-.fifthimg{
-    grid-column: 1/6;
-}
-
-.fifthdescription{
-    grid-column: 6/12;
-}
-
-.sixthimg{
-    grid-column: 7/13;
-}
-
-.sixthdescription{
-    grid-column: 1/6;
-}
-
-.abone{
-    grid-column: 1/8;
-}
-
-.abtwo{
-    grid-column: 6/13;
-}
-
-.abthree{
-    grid-column: 1/8 
-}
-   
-.abfour{
-    grid-column: 6/13;
-}
-.abfive{
-    grid-column: 1/8;
-}
-
-.absix{
-    grid-column: 6/13;
-}
-
-.abseven{
-    grid-column: 1/8;
-}
-
-.abeight{
-    grid-column: 6/13;
-}
-
-.abnine{
-    grid-column: 1/8;
-}
-
-.abten{
-    grid-column: 6/13;
-}
-
-.contactgrid{
-    grid-column: 1/8;
-}
-    */
