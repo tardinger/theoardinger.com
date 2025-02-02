@@ -13,16 +13,15 @@
     font-style: normal; 
 }
 
+
 html{
     background-color: #fafaef;
 }
 
-body{
-    height: 100%; 
-    margin: 0; 
-    display: flex; 
-    flex-direction: column; 
-    flex-shrink: 0; 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 img{
@@ -63,59 +62,40 @@ nav a:hover {
 }
 
 section {
-    max-width: 1200px;
+    max-width: 1200px; 
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem;
     padding: 1rem;
 }
 
-.firstpiece {
-    grid-column: 1; 
-    width: 100%; 
+.firstpiece,
+.secondpiece,
+.thirdpiece,
+.fourthpiece {
+    width: 100%;  
     max-width: 100%; 
-    height: auto; 
-    margin: auto; 
+    height: auto;
     border: 1px none;
 }
 
-.firstpiece img{
+.firstpiece img,
+.secondpiece img,
+.thirdpiece img,
+.fourthpiece img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
     border-radius: 30px;
 }
 
-.secondpiece {
-    grid-column: 2; 
-    width: 100%;
-    height: auto;
-    border: 1px none; 
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; 
+    }
 }
 
-.secondpiece img{
-    border-radius: 30px;
-}
-
-.thirdpiece {
-    grid-column: 3; 
-    width: 100%;
-    height: auto;
-    border: 1px none; 
-}
-
-.thirdpiece img{
-    border-radius: 30px;
-}
-
-.fourthpiece {
-    grid-column: 1; 
-    width: 100%;
-    height: auto;
-    border: 1px none;   
-}
-
-.fourthpiece img{
-    border-radius: 30px;
-}
 
 main{
     display: flex;
@@ -212,11 +192,11 @@ footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 1rem;
+    padding: .5rem;
     position: relative;
     text-align: center; 
     background-color: #3D46F2; 
-    margin-top: auto; 
+    margin: auto; 
     max-width: 100%; 
     overflow: hidden; 
 }
