@@ -71,6 +71,11 @@ section {
     margin-bottom: 5rem;
 }
 
+section :hover{
+    transform: scale(1.05); 
+    transition: transform 0.3s; 
+}
+
 .firstpiece,
 .secondpiece,
 .thirdpiece,
@@ -115,8 +120,8 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 1.5rem;
     padding: 2rem;
-    max-width: 400px; /* Restrict width to keep it on the left */
-    margin-left: 10rem; /* Aligns it to the left */
+    max-width: 400px;  
+    margin-left: 10rem; 
 }
 
 .aboutimg img {
@@ -128,7 +133,7 @@ p{
 @media (max-width: 768px) {
     .aboutimg {
         max-width: 90%;
-        margin: auto; /* Center it on small screens */
+        margin: auto; 
     }
 }
 
