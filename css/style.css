@@ -6,6 +6,10 @@
 
 @import url("https://use.typekit.net/azo2ybe.css");
 
+@import url("https://use.typekit.net/azo2ybe.css");
+
+@import url("https://use.typekit.net/azo2ybe.css");
+
 @font-face {
     font-family: "GothamNarrow-Black"; 
     src: url("GothamNarrow-Black.otf") format("opentype"); 
@@ -42,10 +46,11 @@ header {
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -109,6 +114,14 @@ main{
     font-size: 1.3rem;
     font-weight: 700;
     flex: 1; 
+}
+
+.typehead{
+    font-family: "ofelia-display";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: #F48C40;
 }
 
 p{
