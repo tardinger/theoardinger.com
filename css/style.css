@@ -178,8 +178,29 @@ main{
     font-weight: 400;
     font-style: normal;
     font-size: 2.5rem;
-    color: #F48C40;
+    color: #2c36b2;
     margin-top: 1.5rem;
+}
+
+.descriptions{
+    font-family: "newbery-sans-pro", sans-serif;
+    font-weight: 200;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-align: left; 
+    color: #3b2813;
+    margin: 2rem 10rem 5rem 10rem;
+    
+}
+
+.descriptiontitle{
+    font-family: "newbery-sans-pro", sans-serif;
+    font-size: 1.3rem;
+    text-align: left; 
+    margin: 2rem 10rem 2rem 10rem;
+    font-weight: 100;
+    font-style: normal;
+    color: #2c36b2;
 }
 
 p{
@@ -270,10 +291,10 @@ p{
   
   .contact-form-container input[type="submit"]:hover {
     background-color: #2c36b2;
-  }
+}
+  
 
-
-  footer {
+footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
