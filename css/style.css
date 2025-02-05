@@ -123,12 +123,6 @@ section :hover{
     object-fit: cover;
 }
 
-.cover{
-    height: 100%;
-    max-width: 600px;
-    object-fit: cover;
-}
-
 .fade {
     animation: fadeEffect .7s ease-in-out;
 }
@@ -166,11 +160,7 @@ section :hover{
 }
 
 main{
-    display: flex;
-    color: #3b2813;
-    font-size: 1.3rem;
-    font-weight: 700;
-    flex: 1; 
+    
 }
 
 .typehead{
@@ -202,6 +192,13 @@ main{
     font-style: normal;
     color: #2c36b2;
 }
+
+.cultivate {
+    align-items: center;
+    width: 1080px;
+    height: auto; 
+}
+
 
 p{
     font-size: 1.2rem;
