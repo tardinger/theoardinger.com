@@ -101,15 +101,9 @@ section :hover{
     border-radius: 30px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .slideshow-container {
-    max-width: 1920px;
-    max-height: 1080px;
+    max-width: 1280px;
+    max-height: 720px;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -129,12 +123,18 @@ section :hover{
     object-fit: cover;
 }
 
+.cover{
+    height: 100%;
+    max-width: 600px;
+    object-fit: cover;
+}
+
 .fade {
-    animation: fadeEffect 1.5s ease-in-out;
+    animation: fadeEffect .7s ease-in-out;
 }
 
 @keyframes fadeEffect {
-    from { opacity: 0.4; }
+    from { opacity: 0.7; }
     to { opacity: 1; }
 }
 
@@ -175,9 +175,9 @@ main{
 
 .typehead{
     font-family: "ofelia-display";
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: #F48C40;
     margin-top: 1.5rem;
 }
