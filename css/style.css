@@ -194,9 +194,13 @@ main{
 }
 
 .cultivate {
-    align-items: center;
-    width: 1080px;
-    height: auto; 
+    max-width: 854px;
+    max-height: 480px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    padding: 3rem;
+    margin-top: 1rem;
 }
 
 
