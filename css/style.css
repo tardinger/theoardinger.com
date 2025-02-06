@@ -196,7 +196,8 @@ main{
 
 @media (max-width: 768px) {
     .descriptions, .descriptiontitle {
-        font-size: 1rem; 
+        font-size: 1rem;
+        padding: .5rem 5rem .5rem 5rem; 
     }
 }
 
