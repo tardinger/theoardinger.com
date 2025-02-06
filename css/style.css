@@ -179,18 +179,25 @@ main{
     font-style: normal;
     text-align: left; 
     color: #3b2813;
-    margin: 2rem 10rem 5rem 10rem;
-    
+    margin: auto;
+    padding: 2rem 10rem 2rem 10rem;
 }
 
 .descriptiontitle{
     font-family: "newbery-sans-pro", sans-serif;
     font-size: 1.3rem;
     text-align: left; 
-    margin: 2rem 10rem 2rem 10rem;
+    margin: auto;
     font-weight: 100;
     font-style: normal;
     color: #2c36b2;
+    padding: 2rem 10rem 0rem 10rem;
+}
+
+@media (max-width: 768px) {
+    .descriptions, .descriptiontitle {
+        font-size: 1rem; 
+    }
 }
 
 .cultivate {
