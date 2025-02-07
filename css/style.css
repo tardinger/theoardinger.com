@@ -17,7 +17,6 @@
     font-style: normal; 
 }
 
-
 html{
     background-color: #fafaef;
 }
@@ -202,7 +201,6 @@ section :hover{
     max-height: 480px;
     position: relative;
     margin: auto;
-    overflow: visible;
     padding: 3rem;
     margin-top: 1rem;
 }
@@ -309,7 +307,6 @@ footer {
     color: #fafaef;
     position: relative; /* Change to fixed if you want it always visible */
     bottom: 0;
-    overflow: hidden;
 }
 
 
