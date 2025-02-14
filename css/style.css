@@ -31,6 +31,27 @@ main{
     min-height: calc(100vh - footerHeight);
 }
 
+.splash{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.splash a{
+    text-decoration: none;
+}
+
+.splash a:hover{
+    transform: scale(1.1); 
+}
+
+.splash h1{
+    font-size: 5rem;
+    margin: auto;
+   
+}
+
 a{
     text-decoration: none;
 }
